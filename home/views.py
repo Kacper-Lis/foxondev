@@ -30,6 +30,7 @@ class HomeView(TemplateView):
             {'name': 'Swagger', 'img': 'swagger.png'},
             {'name': 'Postman', 'img': 'postman.png'},
             {'name': 'Pydantic', 'img': 'pydantic.png'},
+            {'name': 'OAuth2', 'img': 'oauth2.png'},
             {'name': 'REST APIs', 'img': 'restapi.png'},
             {'name': 'Agile', 'img': 'agile.png'},
             {'name': 'Jira', 'img': 'jira.png'},
