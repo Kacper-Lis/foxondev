@@ -59,13 +59,45 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/modal1.png' %}" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                                <div class="portfolio-caption-heading">Designing A/B testing</div>
+                                <div class="portfolio-caption-subheading text-muted">THG architectural transformation</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/modal2.png' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Coding Competitions</div>
+                                <div class="portfolio-caption-subheading text-muted">Google HashCode, Kaggle, Reply</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio/modal3.png' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Global Game Jam</div>
+                                <div class="portfolio-caption-subheading text-muted">GameDev 2017-2019</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -229,24 +261,94 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Designing A/B testing</h2>
+                                    <p class="item-intro text-muted">How I transformed A/B testing in THG.</p>
+                                    <p>Hey I'm yet to write a complete description here, but I'll be happy to talk about it!</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Threads
+                                            <strong>Project</strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Coding Competitions</h2>
+                                    <p class="item-intro text-muted">This is my journey with coding competitions.</p>
+                                    <p>The most notable one was 2022 Google HashCode where I got 10th place in the UK and 175th worldwide almost making it into the finals. I set a new unbeaten record at my University.</p>
+                                    <p>As part of my machine learning journey I took part in a couple of Kaggle competitions, achieving 4th place in the competition hosted by DataWorkshop about real estate price estimation.</p>
+                                    <p>In the reply code challenges the highest I achieved was 98th place in 2024, (my algorithms got rusty since I started working as backend dev!) but I got a 9th place in the Sustainable Investment Challenge!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a target="_blank" href="https://github.com/Kacper-Lis/Google-HashCodes">Google HashCode repo</a>
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Illustration
+                                            <a target="_blank" href="https://github.com/Kacper-Lis/PMLkaggle">Kaggle Price Estimation repo</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://github.com/Kacper-Lis/ReplyCodeChallenges">Reply Challenges repo</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Global Game Jam</h2>
+                                    <p class="item-intro text-muted">Game dev sparked me to become a software engineer!</p>
+                                    <p>It all started thanks to the game design club at my high school. With my friend we picked up coding and made our first silly games. Following that we were chosen to go with the team to our first Global Game Jam!</p>
+                                    <p>After the two game jams my game dev journey was stagnant until I picked up a game design module in my third year of uni. For my coursework we were to choose a retro game to make and I chose Tetris. This journey is not over yet, I'm looking to pickup Godot and have another go at making a complete game.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a target="_blank" href="https://github.com/Kacper-Lis/University/tree/main/3rd%20year/Tetris/Assets">Tetris repo</a>
+                                            <p>Uni project made in Unity C#, quite proud of this one, first time using events and subscriber pattern</p>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://github.com/Kacper-Lis/GGJ2019">GGJ2019 repo</a>
+                                            <p>Our tower defense game made in Unity C#</p>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://github.com/Kacper-Lis/GGJ2017">GGJ2017 repo</a>
+                                            <p>This one was made using PhaserJS. You can play it in the browser, the link is in the repo!</p>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
