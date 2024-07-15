@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Journey</h2>
-                    <h3 class="section-subheading text-muted">Here's what led to me becoming the Software Engineer I'm today</h3>
+                    <h3 class="section-subheading text-muted">Here's what led me to becoming the Software Engineer I'm today</h3>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -135,7 +135,7 @@
                                 <h4>Sep 2022 - to Present</h4>
                                 <h4 class="subheading">THG Software Engineer</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted"></p>I joined the experimentation team in THG to expand the A/B testing capabilities, and develop an A/B testing platform as an enterprise offering. Details of projects are described in the portfolio section.</div>
+                            <div class="timeline-body"><p class="text-muted">I joined the experimentation team in THG to expand the A/B testing capabilities, and develop an A/B testing platform as an enterprise offering. Details of projects are described in the portfolio section.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -152,40 +152,8 @@
                 </ul>
             </div>
         </section>
-        <!-- About -->
-        <section class="page-section bg-light" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About Me!</h2>
-                    <h3 class="section-subheading text-muted">Hi I'm Kacper Lisikiewicz</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Activities?</h4>
-                            <p class="text-muted">?????</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Life?</h4>
-                            <p class="text-muted">????</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Interests?</h4>
-                            <p class="text-muted">????</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Technologies -->
-        <section class="page-section" id="technologies">
+        <section class="page-section bg-light" id="technologies">
             <div class="py-5">
                 <div class="container">
                     <div class="text-center">
@@ -212,6 +180,32 @@
                 </div>
             </div>
             <script src="{% static 'js/pagination.js' %}"></script>
+        </section>
+        <!-- About -->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Me!</h2>
+                    <div class="timeline-body about-me-text">
+                        <p>Hi, I'm Kacper Lisikiewicz!</p>
+                        <p>As you might already know, I'm a software engineer!</p>
+                        <p>Outside of work, I like to do many sports, but the main ones are </p>
+                        <p>bouldering, sailing, hiking, basketball and beach volleyball in the summer.</p>
+                        <p>On a more chill day, I like to hang out with my friends, play board games (especially Scythe),</p>
+                        <p>video games, watch shows, and sometimes do a karaoke night.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-me-container">
+                            <div class="about-me-pic">
+                                <img class="mx-auto rounded-circle" src="{% static 'assets/img/about/me_pic.JPG' %}" alt="me_pic" />
+                                <h5>That's me!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4 bg-light">
